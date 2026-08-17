@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>A Grand Birthday Celebration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Intro Overlay -->
+    <div class="intro-overlay" id="introOverlay">
+        <div class="intro-content">
+            <div class="intro-flower">🌸</div>
+            <h2 class="intro-title">I Have Something Special For You</h2>
+            <p class="intro-subtitle">Are you ready to see what I made?</p>
+            <button class="btn-start" id="startBtn">Begin the Celebration</button>
+        </div>
+    </div>
+
+    <!-- Floating Particles -->
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+    <div class="particle p6"></div>
+    <div class="particle p7"></div>
+    <div class="particle p8"></div>
+
+    <!-- Main Grand Card -->
+    <main class="grand-card">
+        <h1 class="main-title">HAPPY BIRTHDAY</h1>
+        <div class="subhead">To the one who makes every moment magical</div>
+
+        <!-- Welcome Message -->
+        <div class="welcome-message">
+            <h2 class="welcome-title">A Letter From My Heart</h2>
+            <p class="welcome-text">
+                My lovelove, on this beautiful day that marks your birth, I wanted to create something 
+                truly special just for you. Words often fail to express the depth of what I feel, but 
+                I've poured my heart into every detail of this celebration. You deserve nothing less 
+                than extraordinary.
+            </p>
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="photo-gallery">
+            <div class="photo-frame" id="photo1">
+                <img src="images/1.jpg" alt="Memory with Shami 1" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'photo-placeholder\'>Photo 1</div>';">
+                <div class="photo-caption">Beautiful Memories</div>
+            </div>
+            <div class="photo-frame" id="photo2">
+                <img src="images/2.jpg" alt="Memory with Shami 2" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'photo-placeholder\'>Photo 2</div>';">
+                <div class="photo-caption">Precious Moments</div>
+            </div>
+            <div class="photo-frame" id="photo3">
+                <img src="images/3.jpg" alt="Memory with Shami 3" onerror="this.style.display='none'; this.parentNode.innerHTML='<div class=\'photo-placeholder\'>Photo 3</div>';">
+                <div class="photo-caption">Forever Cherished</div>
+            </div>
+        </div>
+
+        <!-- Purple Cake Section with Wish Popup Beside -->
+        <div class="cake-wish-wrapper">
+            <div class="cake-container">
+                <div class="cake-text-header">
+                    <div class="birthday-text">HAPPY BIRTHDAY</div>
+                    <div class="birthday-name">SHAMI</div>
+                </div>
+                <div class="cake" style="margin-top: 40px;">
+                    <div class="cake-top" style="margin-top: 20px;">
+                        <div class="rapunzel-flower flower1"></div>
+                        <div class="rapunzel-flower flower2"></div>
+                        <div class="rapunzel-flower flower3"></div>
+                        <div class="rapunzel-flower flower4"></div>
+                        <div class="rapunzel-flower flower5"></div>
+                        <div class="candle">
+                            <div class="flame"></div>
+                        </div>
+                    </div>
+                    <div class="cake-layer layer1">
+                        <div class="cake-decoration deco1"></div>
+                        <div class="cake-decoration deco2"></div>
+                        <div class="cake-decoration deco3"></div>
+                    </div>
+                    <div class="cake-layer layer2">
+                        <div class="cake-decoration deco4"></div>
+                        <div class="cake-decoration deco5"></div>
+                        <div class="cake-decoration deco6"></div>
+                    </div>
+                    <div class="cake-layer layer3">
+                        <div class="cake-decoration deco7"></div>
+                        <div class="cake-decoration deco8"></div>
+                        <div class="cake-decoration deco9"></div>
+                    </div>
+                    <div class="cake-stand"></div>
+                </div>
+                <div class="cake-footer">
+                    <div class="from-text">FROM</div>
+                    <div class="from-name">MJ</div>
+                </div>
+            </div>
+
+            <!-- Wish Popup Beside Cake -->
+            <div class="wish-popup" id="wishPopup">
+                <button class="close-popup">×</button>
+                <div class="wish-popup-content">
+                    <h3 class="wish-popup-title">Make Your Birthday Wish</h3>
+                    <p class="wish-popup-text">
+                        Close your eyes and think of the one thing your heart desires most right now. 
+                        Hold that thought, believe in it with all your heart, and know that I'm here 
+                        wishing for all your dreams to come true too.
+                    </p>
+                    <p class="wish-popup-text">
+                        This year, may your biggest wish find its way to you. May it arrive at the 
+                        perfect moment, in the most beautiful way, and bring you more happiness than 
+                        you ever imagined.
+                    </p>
+                    <p class="wish-popup-blessing">
+                        Your wish is now floating up to the stars, lovelove. Trust that the universe 
+                        heard you, and that wonderful things are already on their way to you.
+                    </p>
+                    <button class="btn-wish-done">I Made My Wish</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons Near Cake -->
+        <div class="action-buttons cake-buttons">
+            <button class="btn btn-special" id="wishBtn">Make A Wish</button>
+            <button class="btn btn-special" id="confettiBtn">Celebrate</button>
+        </div>
+
+        <!-- Long Birthday Letter -->
+        <div class="message-block">
+            <h2 class="message-title">My Birthday Letter For You</h2>
+            <p>
+                As the sun rises on this special day, I find myself overwhelmed with gratitude for 
+                having you in my life. Every moment spent with you has been a gift, every memory 
+                a treasure I hold close to my heart. Today, as we celebrate the day you came into 
+                this world, I want you to know how profoundly you've changed my life for the better.
+            </p>
+            <p>
+                Your kindness knows no bounds, and your strength inspires me daily. The way you face 
+                life's challenges with grace and courage makes me admire you more with each passing 
+                day. You have this incredible ability to light up any room you enter, to make even 
+                the darkest days seem brighter, and to bring hope where there was none.
+            </p>
+            <p>
+                I remember every laugh we've shared, every quiet moment of understanding, every 
+                conversation that lasted until the early hours of the morning. These are the threads 
+                that weave together the beautiful tapestry of our journey. And as we add another 
+                year to your story, I'm excited to see what new chapters await.
+            </p>
+            <p>
+                You deserve all the happiness this world has to offer. You deserve dreams that 
+                come true, love that knows no limits, and a life filled with wonder and adventure. 
+                My wish for you is that this year brings you closer to everything your heart desires, 
+                that you find success in your endeavors, and peace in your soul.
+            </p>
+            <p>
+                Never forget how special you are, how loved, how appreciated. On the days when 
+                doubt creeps in, remember that there is someone who believes in you completely, 
+                who sees your potential, and who will always be here cheering you on from the 
+                sidelines of life.
+            </p>
+            <p>
+                As you blow out your candles today, know that my heart is there with you, making 
+                wishes of its own. Wishes for your happiness, your health, your dreams. Wishes that 
+                every day of this new year of your life is filled with moments that make you smile, 
+                with people who bring out the best in you, and with love that surrounds you always.
+            </p>
+            <p>
+                Happy birthday, my lovelove. May this day be as wonderful as you are, and may the year 
+                ahead be your best one yet. I am so grateful to be part of your journey, and I look 
+                forward to creating many more beautiful memories together.
+            </p>
+            <p>
+                With all my love, admiration, and deepest affection, I celebrate you today and 
+                always. Here's to you, to your journey, to your dreams, and to the incredible 
+                person you are and continue to become.
+            </p>
+            <div class="signature">— Forever yours, MJ —</div>
+        </div>
+
+        <!-- Clickable Letters Section -->
+        <div class="letters-section">
+            <h3 class="letters-title">Letters For You</h3>
+            <p class="letters-intro">Click each letter to reveal a special message</p>
+            <div class="letters-grid">
+                <div class="letter-card" data-letter="1">
+                    <div class="letter-icon">L</div>
+                    <div class="letter-label">Letter One</div>
+                </div>
+                <div class="letter-card" data-letter="2">
+                    <div class="letter-icon">O</div>
+                    <div class="letter-label">Letter Two</div>
+                </div>
+                <div class="letter-card" data-letter="3">
+                    <div class="letter-icon">V</div>
+                    <div class="letter-label">Letter Three</div>
+                </div>
+                <div class="letter-card" data-letter="4">
+                    <div class="letter-icon">E</div>
+                    <div class="letter-label">Letter Four</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Letter Modals -->
+        <div class="letter-modal" id="letterModal1">
+            <div class="letter-modal-content">
+                <button class="close-letter-modal">×</button>
+                <p class="letter-text">
+                    My lovelove, today marks another beautiful year of your existence, and I 
+                    wanted to take this moment to tell you how much you mean to me. Your 
+                    presence in my life has been nothing short of magical. Every day with 
+                    you feels like a new adventure, every moment a precious gift. I hope 
+                    this year brings you everything you've been dreaming of. You deserve 
+                    nothing but the best that life has to offer, and I promise to always 
+                    be here to support you in everything you do.
+                </p>
+            </div>
+        </div>
+        <div class="letter-modal" id="letterModal2">
+            <div class="letter-modal-content">
+                <button class="close-letter-modal">×</button>
+                <p class="letter-text">
+                    On this special day, I find myself thinking about all the wonderful 
+                    moments we've shared. From the smallest gestures to the grandest 
+                    adventures, each memory holds a special place in my heart. You've shown 
+                    me what true friendship and love really mean, and for that, I am 
+                    eternally grateful. The way you care for others, the way you listen, 
+                    the way you make everything better just by being there—these are the 
+                    qualities that make you truly extraordinary.
+                </p>
+            </div>
+        </div>
+        <div class="letter-modal" id="letterModal3">
+            <div class="letter-modal-content">
+                <button class="close-letter-modal">×</button>
+                <p class="letter-text">
+                    Very few people have the power to make others feel truly seen and 
+                    understood, but you do it effortlessly. Your compassion, your wisdom, 
+                    and your beautiful heart make you one of the most extraordinary people 
+                    I know. Never doubt your worth or the positive impact you have on 
+                    everyone around you. You have touched my life in ways you may never 
+                    fully understand, and I am so grateful for every single moment we 
+                    share together.
+                </p>
+            </div>
+        </div>
+        <div class="letter-modal" id="letterModal4">
+            <div class="letter-modal-content">
+                <button class="close-letter-modal">×</button>
+                <p class="letter-text">
+                    Every birthday is a milestone, a marker of growth, learning, and beautiful 
+                    evolution. As you celebrate this special day, remember that you are 
+                    exactly where you need to be. Trust your journey, believe in your 
+                    dreams, and know that the best is yet to come. Happy birthday, my 
+                    incredible lovelove. May this year be filled with countless blessings, 
+                    wonderful surprises, and all the happiness your heart can hold. You 
+                    deserve it all and so much more.
+                </p>
+            </div>
+        </div>
+
+        <!-- Dinner Invitation -->
+        <div class="dinner-invitation">
+            <h3 class="dinner-title">A Special Question</h3>
+            <div class="dinner-content">
+                <p class="dinner-text">
+                    I have one more thing to ask you, lovelove. Since I can't be with you on your exact 
+                    birthday, I was wondering if you would like to have dinner with me after 
+                    your exam week? Consider it a belated birthday celebration, just the two 
+                    of us. I promise it will be special.
+                </p>
+                <div class="dinner-options">
+                    <button class="btn-dinner" id="dinnerYes">Yes, I'd love that</button>
+                    <button class="btn-dinner btn-no" id="dinnerNo">No, I can't</button>
+                </div>
+                <div class="dinner-response" id="dinnerResponse"></div>
+            </div>
+        </div>
+
+        <!-- Timeline of Memories -->
+        <div class="timeline">
+            <h3 class="timeline-title">Moments That Matter</h3>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p><strong>The Day We Met</strong> - A moment that changed everything</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p><strong>Countless Laughs</strong> - Every joke, every smile, every memory</p>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <p><strong>Endless Adventures</strong> - The best is yet to come</p>
+            </div>
+        </div>
+
+        <!-- Interactive Buttons -->
+        <div class="action-buttons">
+            <button class="btn" id="toggleMessageBtn">Read A Private Note</button>
+            <button class="btn btn-secondary" id="musicControlBtn">Pause Music</button>
+            <button class="btn btn-special" id="heartBtn">Send Love</button>
+            <button class="btn btn-special" id="memoryBtn">Memory Lane</button>
+        </div>
+
+        <!-- Hidden Private Message -->
+        <div class="hidden-message" id="privateMessage">
+            <button class="close-overlay">×</button>
+            <p class="hidden-title">For Your Eyes Only</p>
+            <p>
+                Even though I cannot be there with you today, please know that you are always in 
+                my thoughts and in my heart. I'm counting down the days until I can celebrate 
+                with you in person. Until then, I hope this little creation brings a smile to 
+                your face and warmth to your heart. You mean more to me than words could ever 
+                express, and I can't wait to see you again, lovelove.
+            </p>
+        </div>
+
+        <!-- Love Container -->
+        <div class="love-container" id="loveContainer">
+            <button class="close-overlay">×</button>
+            <div class="love-animation">💜</div>
+            <p class="love-text">Sending all my love to you</p>
+        </div>
+
+        <!-- Memory Lane Container -->
+        <div class="memory-container" id="memoryContainer">
+            <button class="close-overlay">×</button>
+            <p class="memory-text">
+                Remember when we first met? I knew right then that you were someone special. 
+                Every moment since has only confirmed that feeling. Thank you for being you, lovelove.
+            </p>
+        </div>
+
+        <!-- Confetti Container -->
+        <div class="confetti-container" id="confettiContainer"></div>
+
+        <div class="footer-note">Crafted with love and devotion by MJ</div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
